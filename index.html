@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter a number!</h1>
+      <h2>We're going to play Ping Pong.</h2>
+      <ul>
+        <li>If a number is divisible by 3, I'll replace it with Ping.</li>
+        <li>If a number is divisible by 5, I'll replace it with Pong.</li>
+        <li>If a number is divisible by both 3 & 5, I'll replace it with Ping Pong.</li>
+      </ul>
+      <form id="input">
+        <input type="number" id="userInput"></input>
+
+        <br><br>
+
+        <button type="submit" class="btn">Serve!</button>
+      </form>
+
+      <form id="reset">
+        <button class="btn"><a href="index.html">Play Again!</a></button>
+      </form>
+
+      <div class="result">
+        <p><span id="pingponglist"></span></p>
+      </div>
+    </div>
+
+
+  <script src="js/jquery-1.12.1.js"></script>
+  <script src="js/scripts.js"></script>
+  </body>
+</html>

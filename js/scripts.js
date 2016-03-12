@@ -1,13 +1,25 @@
 var pingPong = function(userNumber){
-  for (var i=0; i<=25; i++){
-if ((i%3===0) && (i%5===0)){
-alert ("ping pong")
-} else if (i%3===0){
-alert ("ping")
-} else if (i%5===0){
-alert ("pong")
-} else {
-alert (i)
+  for (var i=0; i<=userNumber; i++){
+    if ((i%3===0) && (i%5===0)){
+      alert ("ping pong")
+    } else if (i%3===0){
+      alert ("ping")
+    } else if (i%5===0){
+      alert ("pong")
+    } else {
+      alert (i)
+    }
+  }
 }
-}
-}
+
+$("form#input").submit(function(event){
+  var userNumber = $("input#userInput").val();
+
+  pingPong(userNumber);
+
+  $("form#input").hide();
+  $("form#reset").show();
+
+  event.preventDefault();
+
+});
