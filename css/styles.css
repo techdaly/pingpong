@@ -1,3 +1,13 @@
 #reset{
   display: none;
 }
+
+.image{
+  width: 100%;
+  height:auto;
+}
+
+jumbotron{
+  display: inline;
+  border: 0px;
+}
