@@ -1,5 +1,5 @@
 var pingPong = function(userNumber){
-  for (var i=0; i<=userNumber; i++){
+  for (var i=1; i<=userNumber; i++){
     if ((i%3===0) && (i%5===0)){
       $("ul#pingponglist").append("ping pong" + " ")
     } else if (i%3===0){
